@@ -25,7 +25,7 @@ export default function Footer() {
           <ul className="space-y-4">
             <li className="flex items-center gap-3">
               <Phone className="w-5 h-5 text-primary" />
-              <span>(31) 99999-9999</span>
+              <span>(12) 99210-9408</span>
             </li>
             <li className="flex items-center gap-3">
               <Instagram className="w-5 h-5 text-primary" />

@@ -14,7 +14,7 @@ export default function CartDrawer() {
 
     setIsSubmitting(true);
 
-    const phoneNumber = "5531999999999";
+    const phoneNumber = "5512992109408";
     
     let message = "Olá, *Marmitaria Marchado Fit*! Gostaria de fazer o seguinte pedido:\n\n";
     
