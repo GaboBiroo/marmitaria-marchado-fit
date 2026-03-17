@@ -13,7 +13,7 @@ const menuItems = [
     description: "Arroz integral, legumes no vapor e contra-coxa douradinha.", 
     price: 18.90, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/qxytrx1511304021.jpg" // Chicken Couscous
+    imageUrl: "https://www.themealdb.com/images/media/meals/uuuspp1511297945.jpg" 
   },
   { 
     id: "m2", 
@@ -21,7 +21,7 @@ const menuItems = [
     description: "Escondidinho perfeito c/ purê especial, recheado com carne moída magra.", 
     price: 19.90, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/sypxpx1515365095.jpg" // Brown Stew Chicken
+    imageUrl: "https://www.themealdb.com/images/media/meals/xrrwpx1487347049.jpg" 
   },
   { 
     id: "m3", 
@@ -29,7 +29,7 @@ const menuItems = [
     description: "Arroz integral soltinho, carne moída c/ quiabo, brócolis e couve-flor frescos.", 
     price: 19.90, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/1529444830.jpg" // Beef and Mustard Pie
+    imageUrl: "https://www.themealdb.com/images/media/meals/kvbotn1581012881.jpg" 
   },
   { 
     id: "m4", 
@@ -37,7 +37,7 @@ const menuItems = [
     description: "Arroz a grega colorido, contra-coxa suculenta e abobrinha em rodelas.", 
     price: 18.90, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/1529446352.jpg" // Chicken Congee
+    imageUrl: "https://www.themealdb.com/images/media/meals/1529446352.jpg" 
   },
   { 
     id: "m5", 
@@ -45,7 +45,7 @@ const menuItems = [
     description: "Arroz integral, almôndegas artesanais ao molho sugo caseiro e legumes.", 
     price: 19.90, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/syqypv1486981727.jpg" // Meatballs
+    imageUrl: "https://www.themealdb.com/images/media/meals/1529445434.jpg" 
   },
   { 
     id: "m6", 
@@ -53,7 +53,7 @@ const menuItems = [
     description: "Macarrão integral al dente com molho bolonhesa encorpado e toque de requeijão.", 
     price: 28.00, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/sutysw1468247559.jpg" // Spaghetti Bolognese
+    imageUrl: "https://www.themealdb.com/images/media/meals/sutysw1468247559.jpg" 
   },
   { 
     id: "m7", 
@@ -61,7 +61,7 @@ const menuItems = [
     description: "Caldo Baby quentinho de legumes e frango desfiado (Pote de 710ml).", 
     price: 19.00, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/7n8su21699013057.jpg" // Chicken Soup
+    imageUrl: "https://www.themealdb.com/images/media/meals/xxtsvx1511814083.jpg" 
   },
   { 
     id: "m8", 
@@ -69,7 +69,7 @@ const menuItems = [
     description: "Strogonoff cremoso de frango, acompanhado de arroz integral, brócolis e couve-flor.", 
     price: 19.90, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/pqulvm1763282839.jpg" // Spanish Chicken
+    imageUrl: "https://www.themealdb.com/images/media/meals/qxytrx1511304021.jpg" 
   },
   { 
     id: "m9", 
@@ -77,7 +77,7 @@ const menuItems = [
     description: "Feijoada Fit feita com feijão preto, lombo de porco e linguiça calabresa (710 ml).", 
     price: 28.00, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg" // Pork Cassoulet
+    imageUrl: "https://www.themealdb.com/images/media/meals/ldnrm91576791881.jpg" 
   },
   { 
     id: "m10", 
@@ -85,7 +85,7 @@ const menuItems = [
     description: "Saborosas tirinhas de boi com legumes selecionados ao molho e mandioca cozida.", 
     price: 23.00, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/z0ageb1583189517.jpg" // Beef and Vegetable
+    imageUrl: "https://www.themealdb.com/images/media/meals/ssrrrs1503664277.jpg" 
   },
 
   // SALADAS
@@ -95,7 +95,7 @@ const menuItems = [
     description: "Alface americana/roxa, frango em tiras, tomate cereja, pepino, cenoura ralada. Molho: Iogurte, limão e ervas.", 
     price: 15.99, 
     category: "Saladas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/rxvxsg1511553394.jpg" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/z0ageb1583189517.jpg" 
   },
   { 
     id: "sa2", 
@@ -103,7 +103,7 @@ const menuItems = [
     description: "Mix folhas verdes, atum, ovo cozido, abacate em cubos, tomate cereja. Molho: Azeite, limão e pimenta.", 
     price: 15.00, 
     category: "Saladas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/rwuyqx1511383174.jpg" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/yypwwq1511304979.jpg" 
   },
   { 
     id: "sa3", 
@@ -111,7 +111,7 @@ const menuItems = [
     description: "Rúcula e alface, frango grelhado, batata doce, tomate cereja, chia. Molho: Azeite de oliva e limão.", 
     price: 16.00, 
     category: "Saladas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/wvqpwt1468339226.jpg" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/g373701551450225.jpg" 
   },
   { 
     id: "sa4", 
@@ -119,7 +119,7 @@ const menuItems = [
     description: "Couve picada, beterraba/cenoura raladas, pepino, abacate, girassol. Molho: Limão, azeite e gengibre.", 
     price: 16.00, 
     category: "Saladas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/rvvyxq1511883125.jpg" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/rvxxuy1468312893.jpg" 
   },
   { 
     id: "sa5", 
@@ -127,7 +127,7 @@ const menuItems = [
     description: "Grão-de-bico, pepino, tomate, alface, azeitona, queijo branco em cubos. Molho: Azeite, limão e orégano.", 
     price: 16.90, 
     category: "Saladas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/wuxrtu1483564410.jpg" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/ysqrus1487425681.jpg" 
   },
 
   // SUCOS
