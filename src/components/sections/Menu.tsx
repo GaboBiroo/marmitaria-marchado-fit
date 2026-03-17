@@ -1,40 +1,176 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { Plus, Check } from "lucide-react";
+import { Plus, Check, Leaf } from "lucide-react";
 import { useCartStore } from "@/store/cartStore";
 import { useState } from "react";
 
-const marmitasImg = "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2080&auto=format&fit=crop";
-const saladasImg = "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop";
-const sucosImg = "https://images.unsplash.com/photo-1610832958506-aa56368176cf?q=80&w=2070&auto=format&fit=crop";
-
 const menuItems = [
   // MARMITAS
-  { id: "m1", title: "Marmita Opção 1", description: "Arroz integral, legumes e contra-coxa.", price: 18.90, category: "Marmitas", imageUrl: marmitasImg },
-  { id: "m2", title: "Marmita Opção 2", description: "Escondidinho c/ purê especial, recheado com carne moída.", price: 19.90, category: "Marmitas", imageUrl: marmitasImg },
-  { id: "m3", title: "Marmita Opção 3", description: "Arroz integral, carne moída c/quiabo, brócolis e couve-flor.", price: 19.90, category: "Marmitas", imageUrl: marmitasImg },
-  { id: "m4", title: "Marmita Opção 4", description: "Arroz a grega, contra-coxa e abobrinha.", price: 18.90, category: "Marmitas", imageUrl: marmitasImg },
-  { id: "m5", title: "Marmita Opção 5", description: "Arroz integral, almôndegas ao molho sugo e legumes.", price: 19.90, category: "Marmitas", imageUrl: marmitasImg },
-  { id: "m6", title: "Marmita Opção 6", description: "Macarrão integral a bolonhesa com requeijão.", price: 28.00, category: "Marmitas", imageUrl: marmitasImg },
-  { id: "m7", title: "Marmita Opção 7", description: "Caldo Baby (legumes) e frango desfiado 710ml.", price: 19.00, category: "Marmitas", imageUrl: marmitasImg },
-  { id: "m8", title: "Marmita Opção 8", description: "Strogonoff de Frango, arroz integral, brócolis e couve-flor.", price: 19.90, category: "Marmitas", imageUrl: marmitasImg },
-  { id: "m9", title: "Marmita Opção 9", description: "Feijoada Fit (Feijão preto, lombo de porco e linguiça calabresa. 710 ml.", price: 28.00, category: "Marmitas", imageUrl: marmitasImg },
-  { id: "m10", title: "Marmita Opção 10", description: "Tirinhas de boi c/ legumes ao molho e mandioca.", price: 23.00, category: "Marmitas", imageUrl: marmitasImg },
+  { 
+    id: "m1", 
+    title: "Frango com Legumes Assados", 
+    description: "Arroz integral, legumes no vapor e contra-coxa douradinha.", 
+    price: 18.90, 
+    category: "Marmitas", 
+    imageUrl: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=600&auto=format&fit=crop" 
+  },
+  { 
+    id: "m2", 
+    title: "Escondidinho Fit de Carne", 
+    description: "Escondidinho perfeito c/ purê especial, recheado com carne moída magra.", 
+    price: 19.90, 
+    category: "Marmitas", 
+    imageUrl: "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=600&auto=format&fit=crop" 
+  },
+  { 
+    id: "m3", 
+    title: "Carne Moída Nutri", 
+    description: "Arroz integral soltinho, carne moída c/ quiabo, brócolis e couve-flor frescos.", 
+    price: 19.90, 
+    category: "Marmitas", 
+    imageUrl: "https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=600&auto=format&fit=crop" 
+  },
+  { 
+    id: "m4", 
+    title: "Arroz à Grega com Frango", 
+    description: "Arroz a grega colorido, contra-coxa suculenta e abobrinha em rodelas.", 
+    price: 18.90, 
+    category: "Marmitas", 
+    imageUrl: "https://images.unsplash.com/photo-1512058454905-6bf84faab266?q=80&w=600&auto=format&fit=crop" 
+  },
+  { 
+    id: "m5", 
+    title: "Almôndegas Saudáveis", 
+    description: "Arroz integral, almôndegas artesanais ao molho sugo caseiro e legumes.", 
+    price: 19.90, 
+    category: "Marmitas", 
+    imageUrl: "https://images.unsplash.com/photo-1529042410759-befb1204b468?q=80&w=600&auto=format&fit=crop" 
+  },
+  { 
+    id: "m6", 
+    title: "Macarronada Bolonhesa Fit", 
+    description: "Macarrão integral al dente com molho bolonhesa encorpado e toque de requeijão.", 
+    price: 28.00, 
+    category: "Marmitas", 
+    imageUrl: "https://images.unsplash.com/photo-1626844131082-256783844137?q=80&w=600&auto=format&fit=crop" 
+  },
+  { 
+    id: "m7", 
+    title: "Caldo Baby de Frango", 
+    description: "Caldo Baby quentinho de legumes e frango desfiado (Pote de 710ml).", 
+    price: 19.00, 
+    category: "Marmitas", 
+    imageUrl: "https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=600&auto=format&fit=crop" 
+  },
+  { 
+    id: "m8", 
+    title: "Strogonoff Leve de Frango", 
+    description: "Strogonoff cremoso de frango, acompanhado de arroz integral, brócolis e couve-flor.", 
+    price: 19.90, 
+    category: "Marmitas", 
+    imageUrl: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=600&auto=format&fit=crop" 
+  },
+  { 
+    id: "m9", 
+    title: "Feijoada Light Completa", 
+    description: "Feijoada Fit feita com feijão preto, lombo de porco e linguiça calabresa (710 ml).", 
+    price: 28.00, 
+    category: "Marmitas", 
+    imageUrl: "https://images.unsplash.com/photo-1560684352-8497838d2229?q=80&w=600&auto=format&fit=crop" 
+  },
+  { 
+    id: "m10", 
+    title: "Tirinhas de Boi com Mandioca", 
+    description: "Saborosas tirinhas de boi com legumes selecionados ao molho e mandioca cozida.", 
+    price: 23.00, 
+    category: "Marmitas", 
+    imageUrl: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?q=80&w=600&auto=format&fit=crop" 
+  },
 
   // SALADAS
-  { id: "sa1", title: "Salada Opção 1", description: "Alface americana e roxa, Frango grelhado em tiras, Tomate cereja, Pepino, Cenoura ralada. Molho: Iogurte natural com limão e ervas.", price: 15.99, category: "Saladas", imageUrl: saladasImg },
-  { id: "sa2", title: "Salada Opção 2", description: "Mix de folhas verdes, Atum em água, Ovo cozido, Abacate em cubos, Tomate cereja. Molho: Azeite, limão e pimenta-do-reino.", price: 15.00, category: "Saladas", imageUrl: saladasImg },
-  { id: "sa3", title: "Salada Opção 3", description: "Rúcula e alface, Frango grelhado, Batata doce cozida em cubos, Tomate cereja, Sementes de chia. Molho: Azeite de oliva e limão.", price: 16.00, category: "Saladas", imageUrl: saladasImg },
-  { id: "sa4", title: "Salada Opção 4", description: "Couve picada, Beterraba ralada, Cenoura ralada, Pepino, Abacate, Sementes de girassol. Molho: Limão, azeite e gengibre.", price: 16.00, category: "Saladas", imageUrl: saladasImg },
-  { id: "sa5", title: "Salada Opção 5", description: "Grão-de-bico, Pepino, Tomate, Alface, Azeitona preta, Queijo branco em cubos. Molho: Azeite de oliva, limão e orégano.", price: 16.90, category: "Saladas", imageUrl: saladasImg },
+  { 
+    id: "sa1", 
+    title: "Salada Clássica de Frango", 
+    description: "Alface americana/roxa, frango em tiras, tomate cereja, pepino, cenoura ralada. Molho: Iogurte, limão e ervas.", 
+    price: 15.99, 
+    category: "Saladas", 
+    imageUrl: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=600&auto=format&fit=crop" 
+  },
+  { 
+    id: "sa2", 
+    title: "Salada Proteica de Atum", 
+    description: "Mix folhas verdes, atum, ovo cozido, abacate em cubos, tomate cereja. Molho: Azeite, limão e pimenta.", 
+    price: 15.00, 
+    category: "Saladas", 
+    imageUrl: "https://images.unsplash.com/photo-1546069901-5ec6a79120b0?q=80&w=600&auto=format&fit=crop" 
+  },
+  { 
+    id: "sa3", 
+    title: "Salada Agridoce Frango", 
+    description: "Rúcula e alface, frango grelhado, batata doce, tomate cereja, chia. Molho: Azeite de oliva e limão.", 
+    price: 16.00, 
+    category: "Saladas", 
+    imageUrl: "https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=600&auto=format&fit=crop" 
+  },
+  { 
+    id: "sa4", 
+    title: "Salada Vegana Detox", 
+    description: "Couve picada, beterraba/cenoura raladas, pepino, abacate, girassol. Molho: Limão, azeite e gengibre.", 
+    price: 16.00, 
+    category: "Saladas", 
+    imageUrl: "https://images.unsplash.com/photo-1604909052743-94e838b86d93?q=80&w=600&auto=format&fit=crop" 
+  },
+  { 
+    id: "sa5", 
+    title: "Salada Mediterrânea Leve", 
+    description: "Grão-de-bico, pepino, tomate, alface, azeitona, queijo branco em cubos. Molho: Azeite, limão e orégano.", 
+    price: 16.90, 
+    category: "Saladas", 
+    imageUrl: "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?q=80&w=600&auto=format&fit=crop" 
+  },
 
   // SUCOS
-  { id: "su1", title: "Suco Opção 1", description: "Couve, hortelã e limão.", price: 14.99, category: "Sucos", imageUrl: sucosImg },
-  { id: "su2", title: "Suco Opção 2", description: "Couve, hortelã e laranja.", price: 14.99, category: "Sucos", imageUrl: sucosImg },
-  { id: "su3", title: "Suco Opção 3", description: "Couve, pepino, gengibre, hortelã e água.", price: 9.99, category: "Sucos", imageUrl: sucosImg },
-  { id: "su4", title: "Suco Opção 4", description: "Espinafre, rúcula, couve, hortelã e água.", price: 9.99, category: "Sucos", imageUrl: sucosImg },
-  { id: "su5", title: "Suco Opção 5", description: "Alface, espinafre, capim cidreira e água.", price: 9.99, category: "Sucos", imageUrl: sucosImg },
+  { 
+    id: "su1", 
+    title: "Suco Verde Tradicional", 
+    description: "Perfeita combinação detox de couve fresquinha, hortelã aromática e suco de limão.", 
+    price: 14.99, 
+    category: "Sucos", 
+    imageUrl: "https://images.unsplash.com/photo-1610832958506-aa56368176cf?q=80&w=600&auto=format&fit=crop" 
+  },
+  { 
+    id: "su2", 
+    title: "Suco Refrescante Cítrico", 
+    description: "O adocicado e refrescante match de couve, folhas de hortelã e laranja pera selecionada.", 
+    price: 14.99, 
+    category: "Sucos", 
+    imageUrl: "https://images.unsplash.com/photo-1556881286-fc6915169721?q=80&w=600&auto=format&fit=crop" 
+  },
+  { 
+    id: "su3", 
+    title: "Suco Detox de Pepino", 
+    description: "Bebida ultra hidratante de couve, pepino, gengibre estimulante, hortelã e água.", 
+    price: 9.99, 
+    category: "Sucos", 
+    imageUrl: "https://images.unsplash.com/photo-1558642891-54be180ea339?q=80&w=600&auto=format&fit=crop" 
+  },
+  { 
+    id: "su4", 
+    title: "Super Verde Imunidade", 
+    description: "Combinação potente em verde: espinafre, rúcula, couve, hortelã revigorante e água filtrada.", 
+    price: 9.99, 
+    category: "Sucos", 
+    imageUrl: "https://images.unsplash.com/photo-1622597467836-f3ec52bf6fb5?q=80&w=600&auto=format&fit=crop" 
+  },
+  { 
+    id: "su5", 
+    title: "Verde Relaxante Calmo", 
+    description: "Sensação calmante maravilhosa de alface, espinafre, capim cidreira (erva-doce) e água.", 
+    price: 9.99, 
+    category: "Sucos", 
+    imageUrl: "https://images.unsplash.com/photo-1515586504510-9114ad477ebd?q=80&w=600&auto=format&fit=crop" 
+  },
 ];
 
 const categories = ["Todos", "Marmitas", "Saladas", "Sucos"];
@@ -63,33 +199,42 @@ export default function Menu() {
     : menuItems.filter(item => item.category === activeCategory);
 
   return (
-    <section id="cardapio" className="py-24 bg-white dark:bg-slate-950">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-10 space-y-4">
+    <section id="cardapio" className="py-24 bg-slate-50 dark:bg-slate-950 overflow-hidden relative">
+      {/* Background Decor */}
+      <div className="absolute top-40 -left-64 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-40 -right-64 w-96 h-96 bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
+
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
+        <div className="text-center max-w-2xl mx-auto mb-12 space-y-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
+            <div className="flex justify-center mb-4">
+              <span className="bg-primary/10 text-primary p-2 rounded-2xl">
+                <Leaf className="w-8 h-8" />
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6 tracking-tight">
               Nosso <span className="text-primary italic">Cardápio</span>
             </h2>
             <p className="text-lg text-slate-600 dark:text-slate-400">
-              Escolha entre nossas opções preparadas com ingredientes frescos e selecionados para a sua rotina saudável.
+              Escolha entre nossas opções exclusivas, preparadas diariamente com ingredientes super frescos, pensadas para a sua rotina saudável.
             </p>
           </motion.div>
         </div>
 
         {/* Categoria Filtros */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 mb-16">
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-6 py-2 rounded-full text-sm font-semibold transition-all shadow-sm ${
+              className={`px-8 py-3 rounded-full text-sm font-bold tracking-wide transition-all ${
                 activeCategory === category 
-                  ? "bg-primary text-white scale-105 shadow-primary/30" 
-                  : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 hover:scale-105"
+                  ? "bg-primary text-white shadow-lg shadow-primary/30 -translate-y-1" 
+                  : "bg-white dark:bg-slate-900 text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:border-primary/50 hover:text-primary dark:hover:text-primary hover:-translate-y-1"
               }`}
             >
               {category}
@@ -97,52 +242,61 @@ export default function Menu() {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <AnimatePresence mode="popLayout">
-            {filteredItems.map((item, index) => (
+            {filteredItems.map((item) => (
               <motion.div
                 layout
                 key={item.id}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.3 }}
-                className="group flex flex-col bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-md hover:shadow-xl transition-all duration-300"
+                initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: 20, scale: 0.95 }}
+                transition={{ duration: 0.4 }}
+                className="group flex flex-col sm:flex-row bg-white dark:bg-slate-900 rounded-[2rem] overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-2xl transition-all duration-300"
               >
-                <div className="relative h-48 overflow-hidden bg-slate-100 dark:bg-slate-800">
+                {/* Imagem Horizontal no Desktop, Topo no Mobile */}
+                <div className="relative h-56 sm:h-auto sm:w-48 shrink-0 overflow-hidden bg-slate-100 dark:bg-slate-800">
                   <img 
                     src={item.imageUrl} 
                     alt={item.title} 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute top-3 right-3 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-slate-800 dark:text-white shadow-sm">
+                  <div className="absolute top-4 left-4 sm:hidden bg-white/95 dark:bg-slate-900/95 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold text-slate-800 dark:text-white shadow-sm">
                     {item.category}
                   </div>
                 </div>
 
-                <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="font-bold text-lg text-slate-900 dark:text-white mb-2">
+                {/* Conteúdo */}
+                <div className="p-6 md:p-8 flex flex-col flex-grow justify-center relative">
+                  <div className="hidden sm:inline-block absolute top-6 right-6 px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase text-primary bg-primary/10">
+                    {item.category}
+                  </div>
+                  
+                  <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-3 pr-16 leading-tight">
                     {item.title}
                   </h3>
-                  <p className="text-slate-500 dark:text-slate-400 text-sm mb-6 flex-grow">
+                  <p className="text-slate-500 dark:text-slate-400 text-sm mb-6 flex-grow leading-relaxed">
                     {item.description}
                   </p>
                   
-                  <div className="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-slate-800">
-                    <span className="font-bold text-xl text-primary">
-                      R$ {item.price.toFixed(2).replace('.', ',')}
-                    </span>
+                  <div className="flex items-center justify-between mt-auto">
+                    <div className="flex items-baseline gap-1">
+                      <span className="text-sm font-semibold text-slate-400 dark:text-slate-500">R$</span>
+                      <span className="font-bold text-2xl text-slate-900 dark:text-white tracking-tight">
+                        {item.price.toFixed(2).replace('.', ',')}
+                      </span>
+                    </div>
                     
                     <button 
                       onClick={() => handleAddToCart(item)}
-                      className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-slate-900 ${
+                      className={`h-12 w-12 rounded-full flex items-center justify-center transition-all duration-300 focus:ring-4 focus:ring-primary/20 cursor-pointer ${
                         addedItem === item.id 
-                          ? 'bg-green-500 text-white focus:ring-green-500'
-                          : 'bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:bg-primary dark:hover:bg-primary hover:text-white focus:ring-primary'
+                          ? 'bg-green-500 text-white scale-110 rotate-12 shadow-md shadow-green-500/20'
+                          : 'bg-primary/10 text-primary hover:bg-primary hover:text-white'
                       }`}
                       aria-label="Adicionar ao carrinho"
                     >
-                      {addedItem === item.id ? <Check className="w-5 h-5" /> : <Plus className="w-5 h-5" />}
+                      {addedItem === item.id ? <Check className="w-5 h-5" /> : <Plus className="w-6 h-6" />}
                     </button>
                   </div>
                 </div>
