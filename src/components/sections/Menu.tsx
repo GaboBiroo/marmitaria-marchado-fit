@@ -13,7 +13,7 @@ const menuItems = [
     description: "Arroz integral, legumes no vapor e contra-coxa douradinha.", 
     price: 18.90, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/uuuspp1511297945.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Max%27s_Roasted_Chicken_-_Evan_Swigart.jpg/960px-Max%27s_Roasted_Chicken_-_Evan_Swigart.jpg" 
   },
   { 
     id: "m2", 
@@ -21,7 +21,7 @@ const menuItems = [
     description: "Escondidinho perfeito c/ purê especial, recheado com carne moída magra.", 
     price: 19.90, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/xrrwpx1487347049.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Homerton_College_-_Shepherd%27s_pie_%28cropped%29.jpg/960px-Homerton_College_-_Shepherd%27s_pie_%28cropped%29.jpg" 
   },
   { 
     id: "m3", 
@@ -29,7 +29,7 @@ const menuItems = [
     description: "Arroz integral soltinho, carne moída c/ quiabo, brócolis e couve-flor frescos.", 
     price: 19.90, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/kvbotn1581012881.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Picadillo_and_rice.jpg/960px-Picadillo_and_rice.jpg" 
   },
   { 
     id: "m4", 
@@ -37,7 +37,7 @@ const menuItems = [
     description: "Arroz a grega colorido, contra-coxa suculenta e abobrinha em rodelas.", 
     price: 18.90, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/1529446352.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Arroz-con-Pollo.jpg/960px-Arroz-con-Pollo.jpg" 
   },
   { 
     id: "m5", 
@@ -45,7 +45,7 @@ const menuItems = [
     description: "Arroz integral, almôndegas artesanais ao molho sugo caseiro e legumes.", 
     price: 19.90, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/1529445434.jpg" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/syqypv1486981727.jpg" 
   },
   { 
     id: "m6", 
@@ -53,7 +53,7 @@ const menuItems = [
     description: "Macarrão integral al dente com molho bolonhesa encorpado e toque de requeijão.", 
     price: 28.00, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/sutysw1468247559.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Tagliatelle_al_rag%C3%B9_%28image_modified%29.jpg/960px-Tagliatelle_al_rag%C3%B9_%28image_modified%29.jpg" 
   },
   { 
     id: "m7", 
@@ -61,7 +61,7 @@ const menuItems = [
     description: "Caldo Baby quentinho de legumes e frango desfiado (Pote de 710ml).", 
     price: 19.00, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/xxtsvx1511814083.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Chicken_Noodle_Soup.jpg/960px-Chicken_Noodle_Soup.jpg" 
   },
   { 
     id: "m8", 
@@ -69,7 +69,7 @@ const menuItems = [
     description: "Strogonoff cremoso de frango, acompanhado de arroz integral, brócolis e couve-flor.", 
     price: 19.90, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/qxytrx1511304021.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Moscow_%288351271825%29.jpg/960px-Moscow_%288351271825%29.jpg" 
   },
   { 
     id: "m9", 
@@ -77,7 +77,7 @@ const menuItems = [
     description: "Feijoada Fit feita com feijão preto, lombo de porco e linguiça calabresa (710 ml).", 
     price: 28.00, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/ldnrm91576791881.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/90/Feijoada_%C3%A0_transmontada.jpg" 
   },
   { 
     id: "m10", 
@@ -85,7 +85,7 @@ const menuItems = [
     description: "Saborosas tirinhas de boi com legumes selecionados ao molho e mandioca cozida.", 
     price: 23.00, 
     category: "Marmitas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/ssrrrs1503664277.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Gulyas080.jpg/960px-Gulyas080.jpg" 
   },
 
   // SALADAS
@@ -95,7 +95,7 @@ const menuItems = [
     description: "Alface americana/roxa, frango em tiras, tomate cereja, pepino, cenoura ralada. Molho: Iogurte, limão e ervas.", 
     price: 15.99, 
     category: "Saladas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/z0ageb1583189517.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Flickr_sa_ku_ra_10556400--Chicken_salad.jpg/960px-Flickr_sa_ku_ra_10556400--Chicken_salad.jpg" 
   },
   { 
     id: "sa2", 
@@ -103,7 +103,7 @@ const menuItems = [
     description: "Mix folhas verdes, atum, ovo cozido, abacate em cubos, tomate cereja. Molho: Azeite, limão e pimenta.", 
     price: 15.00, 
     category: "Saladas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/yypwwq1511304979.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Nizza-Salat_an_der_F_Mittelmeerk%C3%BCste.JPG/960px-Nizza-Salat_an_der_F_Mittelmeerk%C3%BCste.JPG" 
   },
   { 
     id: "sa3", 
@@ -111,7 +111,7 @@ const menuItems = [
     description: "Rúcula e alface, frango grelhado, batata doce, tomate cereja, chia. Molho: Azeite de oliva e limão.", 
     price: 16.00, 
     category: "Saladas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/g373701551450225.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Cobb_salad%2C_15_October_2010.jpg/960px-Cobb_salad%2C_15_October_2010.jpg" 
   },
   { 
     id: "sa4", 
@@ -119,7 +119,7 @@ const menuItems = [
     description: "Couve picada, beterraba/cenoura raladas, pepino, abacate, girassol. Molho: Limão, azeite e gengibre.", 
     price: 16.00, 
     category: "Saladas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/rvxxuy1468312893.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Salade_mesclun_et_ch%C3%A8vre_chaud_sur_toasts.jpg/960px-Salade_mesclun_et_ch%C3%A8vre_chaud_sur_toasts.jpg" 
   },
   { 
     id: "sa5", 
@@ -127,7 +127,7 @@ const menuItems = [
     description: "Grão-de-bico, pepino, tomate, alface, azeitona, queijo branco em cubos. Molho: Azeite, limão e orégano.", 
     price: 16.90, 
     category: "Saladas", 
-    imageUrl: "https://www.themealdb.com/images/media/meals/ysqrus1487425681.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Greece_Food_Horiatiki.JPG/960px-Greece_Food_Horiatiki.JPG" 
   },
 
   // SUCOS
@@ -137,7 +137,7 @@ const menuItems = [
     description: "Perfeita combinação detox de couve fresquinha, hortelã aromática e suco de limão.", 
     price: 14.99, 
     category: "Sucos", 
-    imageUrl: "https://www.thecocktaildb.com/images/media/drink/znald61487604035.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Kiwi_Smoothie.jpg/960px-Kiwi_Smoothie.jpg" 
   },
   { 
     id: "su2", 
@@ -145,7 +145,7 @@ const menuItems = [
     description: "O adocicado e refrescante match de couve, folhas de hortelã e laranja pera selecionada.", 
     price: 14.99, 
     category: "Sucos", 
-    imageUrl: "https://www.thecocktaildb.com/images/media/drink/54z5h71487603583.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Orangejuice.jpg/960px-Orangejuice.jpg" 
   },
   { 
     id: "su3", 
@@ -153,7 +153,7 @@ const menuItems = [
     description: "Bebida ultra hidratante de couve, pepino, gengibre estimulante, hortelã e água.", 
     price: 9.99, 
     category: "Sucos", 
-    imageUrl: "https://www.thecocktaildb.com/images/media/drink/uqxqsy1468876703.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Cucumber_juice.jpg/960px-Cucumber_juice.jpg" 
   },
   { 
     id: "su4", 
@@ -161,7 +161,7 @@ const menuItems = [
     description: "Combinação potente em verde: espinafre, rúcula, couve, hortelã revigorante e água filtrada.", 
     price: 9.99, 
     category: "Sucos", 
-    imageUrl: "https://www.thecocktaildb.com/images/media/drink/iq6scx1487603980.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/67/Wheatgrass.jpg" 
   },
   { 
     id: "su5", 
@@ -169,7 +169,7 @@ const menuItems = [
     description: "Sensação calmante maravilhosa de alface, espinafre, capim cidreira (erva-doce) e água.", 
     price: 9.99, 
     category: "Sucos", 
-    imageUrl: "https://www.thecocktaildb.com/images/media/drink/eirmo71487603745.jpg" 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Tunisian_Tea_with_pine_nuts.jpg/960px-Tunisian_Tea_with_pine_nuts.jpg" 
   },
 ];
 
