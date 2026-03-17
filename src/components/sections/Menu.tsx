@@ -13,7 +13,7 @@ const menuItems = [
     description: "Arroz integral, legumes no vapor e contra-coxa douradinha.", 
     price: 18.90, 
     category: "Marmitas", 
-    imageUrl: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/qxytrx1511304021.jpg" // Chicken Couscous
   },
   { 
     id: "m2", 
@@ -21,7 +21,7 @@ const menuItems = [
     description: "Escondidinho perfeito c/ purê especial, recheado com carne moída magra.", 
     price: 19.90, 
     category: "Marmitas", 
-    imageUrl: "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/sypxpx1515365095.jpg" // Brown Stew Chicken
   },
   { 
     id: "m3", 
@@ -29,7 +29,7 @@ const menuItems = [
     description: "Arroz integral soltinho, carne moída c/ quiabo, brócolis e couve-flor frescos.", 
     price: 19.90, 
     category: "Marmitas", 
-    imageUrl: "https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/1529444830.jpg" // Beef and Mustard Pie
   },
   { 
     id: "m4", 
@@ -37,7 +37,7 @@ const menuItems = [
     description: "Arroz a grega colorido, contra-coxa suculenta e abobrinha em rodelas.", 
     price: 18.90, 
     category: "Marmitas", 
-    imageUrl: "https://images.unsplash.com/photo-1512058454905-6bf84faab266?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/1529446352.jpg" // Chicken Congee
   },
   { 
     id: "m5", 
@@ -45,7 +45,7 @@ const menuItems = [
     description: "Arroz integral, almôndegas artesanais ao molho sugo caseiro e legumes.", 
     price: 19.90, 
     category: "Marmitas", 
-    imageUrl: "https://images.unsplash.com/photo-1529042410759-befb1204b468?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/syqypv1486981727.jpg" // Meatballs
   },
   { 
     id: "m6", 
@@ -53,7 +53,7 @@ const menuItems = [
     description: "Macarrão integral al dente com molho bolonhesa encorpado e toque de requeijão.", 
     price: 28.00, 
     category: "Marmitas", 
-    imageUrl: "https://images.unsplash.com/photo-1626844131082-256783844137?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/sutysw1468247559.jpg" // Spaghetti Bolognese
   },
   { 
     id: "m7", 
@@ -61,7 +61,7 @@ const menuItems = [
     description: "Caldo Baby quentinho de legumes e frango desfiado (Pote de 710ml).", 
     price: 19.00, 
     category: "Marmitas", 
-    imageUrl: "https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/7n8su21699013057.jpg" // Chicken Soup
   },
   { 
     id: "m8", 
@@ -69,7 +69,7 @@ const menuItems = [
     description: "Strogonoff cremoso de frango, acompanhado de arroz integral, brócolis e couve-flor.", 
     price: 19.90, 
     category: "Marmitas", 
-    imageUrl: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/pqulvm1763282839.jpg" // Spanish Chicken
   },
   { 
     id: "m9", 
@@ -77,7 +77,7 @@ const menuItems = [
     description: "Feijoada Fit feita com feijão preto, lombo de porco e linguiça calabresa (710 ml).", 
     price: 28.00, 
     category: "Marmitas", 
-    imageUrl: "https://images.unsplash.com/photo-1560684352-8497838d2229?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg" // Pork Cassoulet
   },
   { 
     id: "m10", 
@@ -85,7 +85,7 @@ const menuItems = [
     description: "Saborosas tirinhas de boi com legumes selecionados ao molho e mandioca cozida.", 
     price: 23.00, 
     category: "Marmitas", 
-    imageUrl: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/z0ageb1583189517.jpg" // Beef and Vegetable
   },
 
   // SALADAS
@@ -95,7 +95,7 @@ const menuItems = [
     description: "Alface americana/roxa, frango em tiras, tomate cereja, pepino, cenoura ralada. Molho: Iogurte, limão e ervas.", 
     price: 15.99, 
     category: "Saladas", 
-    imageUrl: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/rxvxsg1511553394.jpg" 
   },
   { 
     id: "sa2", 
@@ -103,7 +103,7 @@ const menuItems = [
     description: "Mix folhas verdes, atum, ovo cozido, abacate em cubos, tomate cereja. Molho: Azeite, limão e pimenta.", 
     price: 15.00, 
     category: "Saladas", 
-    imageUrl: "https://images.unsplash.com/photo-1546069901-5ec6a79120b0?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/rwuyqx1511383174.jpg" 
   },
   { 
     id: "sa3", 
@@ -111,7 +111,7 @@ const menuItems = [
     description: "Rúcula e alface, frango grelhado, batata doce, tomate cereja, chia. Molho: Azeite de oliva e limão.", 
     price: 16.00, 
     category: "Saladas", 
-    imageUrl: "https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/wvqpwt1468339226.jpg" 
   },
   { 
     id: "sa4", 
@@ -119,7 +119,7 @@ const menuItems = [
     description: "Couve picada, beterraba/cenoura raladas, pepino, abacate, girassol. Molho: Limão, azeite e gengibre.", 
     price: 16.00, 
     category: "Saladas", 
-    imageUrl: "https://images.unsplash.com/photo-1604909052743-94e838b86d93?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/rvvyxq1511883125.jpg" 
   },
   { 
     id: "sa5", 
@@ -127,7 +127,7 @@ const menuItems = [
     description: "Grão-de-bico, pepino, tomate, alface, azeitona, queijo branco em cubos. Molho: Azeite, limão e orégano.", 
     price: 16.90, 
     category: "Saladas", 
-    imageUrl: "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.themealdb.com/images/media/meals/wuxrtu1483564410.jpg" 
   },
 
   // SUCOS
@@ -137,7 +137,7 @@ const menuItems = [
     description: "Perfeita combinação detox de couve fresquinha, hortelã aromática e suco de limão.", 
     price: 14.99, 
     category: "Sucos", 
-    imageUrl: "https://images.unsplash.com/photo-1610832958506-aa56368176cf?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.thecocktaildb.com/images/media/drink/znald61487604035.jpg" 
   },
   { 
     id: "su2", 
@@ -145,7 +145,7 @@ const menuItems = [
     description: "O adocicado e refrescante match de couve, folhas de hortelã e laranja pera selecionada.", 
     price: 14.99, 
     category: "Sucos", 
-    imageUrl: "https://images.unsplash.com/photo-1556881286-fc6915169721?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.thecocktaildb.com/images/media/drink/54z5h71487603583.jpg" 
   },
   { 
     id: "su3", 
@@ -153,7 +153,7 @@ const menuItems = [
     description: "Bebida ultra hidratante de couve, pepino, gengibre estimulante, hortelã e água.", 
     price: 9.99, 
     category: "Sucos", 
-    imageUrl: "https://images.unsplash.com/photo-1558642891-54be180ea339?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.thecocktaildb.com/images/media/drink/uqxqsy1468876703.jpg" 
   },
   { 
     id: "su4", 
@@ -161,7 +161,7 @@ const menuItems = [
     description: "Combinação potente em verde: espinafre, rúcula, couve, hortelã revigorante e água filtrada.", 
     price: 9.99, 
     category: "Sucos", 
-    imageUrl: "https://images.unsplash.com/photo-1622597467836-f3ec52bf6fb5?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.thecocktaildb.com/images/media/drink/iq6scx1487603980.jpg" 
   },
   { 
     id: "su5", 
@@ -169,7 +169,7 @@ const menuItems = [
     description: "Sensação calmante maravilhosa de alface, espinafre, capim cidreira (erva-doce) e água.", 
     price: 9.99, 
     category: "Sucos", 
-    imageUrl: "https://images.unsplash.com/photo-1515586504510-9114ad477ebd?q=80&w=600&auto=format&fit=crop" 
+    imageUrl: "https://www.thecocktaildb.com/images/media/drink/eirmo71487603745.jpg" 
   },
 ];
 
